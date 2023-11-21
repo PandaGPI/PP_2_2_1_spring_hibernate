@@ -28,6 +28,7 @@ public class MainApp {
         List<User> usr = userService.getUserByCar("S", 222);
         for (User user : usr) {
             System.out.println(user.toString());
+            System.out.println("___________________________");
         }
 
         List<User> users = userService.listUsers();
@@ -39,9 +40,6 @@ public class MainApp {
             System.out.println("Car = " + user.getUserCar());
             System.out.println();
         }
-
-
-
         context.close();
     }
 }
